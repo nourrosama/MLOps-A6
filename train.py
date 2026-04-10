@@ -47,7 +47,7 @@ try:
         f.write(run_id)
     print("model_info.txt written.")
 
-except Exception as e:
+except Exception:
     with open("error_logs.txt", "w") as f:
         f.write("Training failed with the following error:\n\n")
         f.write(traceback.format_exc())
